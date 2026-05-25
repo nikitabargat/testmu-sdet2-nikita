@@ -21,23 +21,27 @@ Covers UI, API, and integration testing with CI/CD pipeline integration and Allu
 
 ## Project Structure
 
+## Project Structure
+
+```
 testmu-sdet2-nikita/
 ├── src/test/java/testmu/
-│   ├── base/           # BaseTest — WebDriver setup and teardown
-│   ├── pages/          # Page Object classes (LoginPage, InventoryPage)
+│   ├── base/               # BaseTest — WebDriver setup and teardown
+│   ├── pages/              # Page Object classes (LoginPage, InventoryPage)
 │   ├── tests/
-│   │   ├── ui/         # UI test classes
-│   │   ├── api/        # API test classes
-│   │   └── integration/# Integration test classes
-│   └── utils/          # ConfigReader and shared utilities
+│   │   ├── ui/             # UI test classes
+│   │   ├── api/            # API test classes
+│   │   └── integration/    # Integration test classes
+│   └── utils/              # ConfigReader and shared utilities
 ├── src/test/resources/
-│   ├── config/         # config.properties — environment settings
-│   └── testdata/       # users.json — externalised test data
-├── .github/workflows/  # GitHub Actions CI pipeline
-├── testng.xml          # Test suite configuration
-├── test-strategy.md    # Test approach and risk analysis
-├── ai-usage-log.md     # AI tool usage log
+│   ├── config/             # config.properties — environment settings
+│   └── testdata/           # users.json — externalised test data
+├── .github/workflows/      # GitHub Actions CI pipeline
+├── testng.xml              # Test suite configuration
+├── test-strategy.md        # Test approach and risk analysis
+├── ai-usage-log.md         # AI tool usage log
 └── pom.xml
+```
 
 ---
 
