@@ -1,4 +1,4 @@
-# Created at 2026-05-25T19:47:59.004
+# Created at 2026-05-25T23:08:40.924
 Boot Manifest-JAR contains absolute paths in classpath 'B:\Nikita\Automation learning\VS Code\testmu-sdet2-nikita\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
 'other' has different root

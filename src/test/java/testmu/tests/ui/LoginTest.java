@@ -4,6 +4,9 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
+
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -12,6 +15,11 @@ import testmu.base.BaseTest;
 import testmu.pages.InventoryPage;
 import testmu.pages.LoginPage;
 import testmu.utils.ConfigReader;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.File;
+
 
 public class LoginTest extends BaseTest {
 
@@ -86,11 +94,21 @@ public class LoginTest extends BaseTest {
     }
 
     @DataProvider(name = "multipleUsers")
-    public Object[][] multipleUsersProvider() {
+    public Object[][] multipleUsersProvider() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        JsonNode root = mapper.readTree(
+            new File("src/test/resources/testdata/users.json")
+        );
+
         return new Object[][] {
-            {"standard_user", "secret_sauce"},
-            {"visual_user", "secret_sauce"},
-            {"performance_glitch_user", "secret_sauce"}
+            {
+                root.get("validUser").get("username").asText(),
+                root.get("validUser").get("password").asText()
+            },
+            {
+                root.get("visualUser").get("username").asText(),
+                root.get("visualUser").get("password").asText()
+            }
         };
     }
 }
