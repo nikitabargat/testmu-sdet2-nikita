@@ -20,6 +20,13 @@ public class ConfigReader {
     }
 
     public static String get(String key) {
+        // For api.key, check environment variable first
+        if (key.equals("api.key")) {
+            String envKey = System.getenv("API_KEY");
+            if (envKey != null && !envKey.isEmpty()) {
+                return envKey;
+            }
+        }
         return properties.getProperty(key);
     }
 }

@@ -16,7 +16,10 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         String browser = ConfigReader.get("browser");
-        boolean headless = Boolean.parseBoolean(ConfigReader.get("headless"));
+        String headlessEnv = System.getProperty("headless");
+        boolean headless = headlessEnv != null ? 
+            Boolean.parseBoolean(headlessEnv) : 
+            Boolean.parseBoolean(ConfigReader.get("headless"));
 
         if (browser.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();
