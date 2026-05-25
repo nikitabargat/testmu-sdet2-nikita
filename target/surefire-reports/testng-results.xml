@@ -1,41 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-25T19:32:58 IST" name="Surefire suite" finished-at="2026-05-25T19:33:06 IST" duration-ms="7632">
+  <suite started-at="2026-05-25T19:48:01 IST" name="TestMu SDET2 Suite" finished-at="2026-05-25T19:48:38 IST" duration-ms="37427">
     <groups>
     </groups>
-    <test started-at="2026-05-25T19:32:58 IST" name="Surefire test" finished-at="2026-05-25T19:33:06 IST" duration-ms="7632">
-      <class name="testmu.tests.api.UserApiTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:32:58 IST" name="setUp" finished-at="2026-05-25T19:32:59 IST" duration-ms="645" status="PASS">
+    <test started-at="2026-05-25T19:48:01 IST" name="UI Tests" finished-at="2026-05-25T19:48:28 IST" duration-ms="27134">
+      <class name="testmu.tests.ui.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:01 IST" name="setUp" finished-at="2026-05-25T19:48:03 IST" duration-ms="2530" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCreateUser()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:32:59 IST" name="testCreateUser" finished-at="2026-05-25T19:33:02 IST" duration-ms="3203" status="PASS">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:04 IST" name="setUpPages" finished-at="2026-05-25T19:48:06 IST" duration-ms="1604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testEmptyCredentials()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:06 IST" name="testEmptyCredentials" finished-at="2026-05-25T19:48:07 IST" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:07 IST" name="tearDown" finished-at="2026-05-25T19:48:07 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:07 IST" name="setUp" finished-at="2026-05-25T19:48:08 IST" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:08 IST" name="setUpPages" finished-at="2026-05-25T19:48:09 IST" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:09 IST" name="testInvalidLogin" finished-at="2026-05-25T19:48:10 IST" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:10 IST" name="tearDown" finished-at="2026-05-25T19:48:10 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:10 IST" name="setUp" finished-at="2026-05-25T19:48:11 IST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:11 IST" name="setUpPages" finished-at="2026-05-25T19:48:12 IST" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testLoginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:12 IST" name="testLoginWithMultipleUsers" data-provider="multipleUsers" finished-at="2026-05-25T19:48:13 IST" duration-ms="651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:13 IST" name="tearDown" finished-at="2026-05-25T19:48:13 IST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:13 IST" name="setUp" finished-at="2026-05-25T19:48:14 IST" duration-ms="921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:14 IST" name="setUpPages" finished-at="2026-05-25T19:48:16 IST" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testLoginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:16 IST" name="testLoginWithMultipleUsers" data-provider="multipleUsers" finished-at="2026-05-25T19:48:16 IST" duration-ms="736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:16 IST" name="tearDown" finished-at="2026-05-25T19:48:17 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:17 IST" name="setUp" finished-at="2026-05-25T19:48:18 IST" duration-ms="910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:18 IST" name="setUpPages" finished-at="2026-05-25T19:48:19 IST" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testLoginWithMultipleUsers(java.lang.String,java.lang.String)[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:19 IST" name="testLoginWithMultipleUsers" data-provider="multipleUsers" finished-at="2026-05-25T19:48:24 IST" duration-ms="5577" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithMultipleUsers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:24 IST" name="tearDown" finished-at="2026-05-25T19:48:25 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:25 IST" name="setUp" finished-at="2026-05-25T19:48:25 IST" duration-ms="861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:25 IST" name="setUpPages" finished-at="2026-05-25T19:48:27 IST" duration-ms="1818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testValidLogin()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:27 IST" name="testValidLogin" finished-at="2026-05-25T19:48:28 IST" duration-ms="598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.ui.LoginTest@529cfee5]" started-at="2026-05-25T19:48:28 IST" name="tearDown" finished-at="2026-05-25T19:48:28 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testmu.tests.ui.LoginTest -->
+    </test> <!-- UI Tests -->
+    <test started-at="2026-05-25T19:48:28 IST" name="API Tests" finished-at="2026-05-25T19:48:34 IST" duration-ms="5771">
+      <class name="testmu.tests.api.UserApiTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:28 IST" name="setUp" finished-at="2026-05-25T19:48:29 IST" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateUser()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:29 IST" name="testCreateUser" finished-at="2026-05-25T19:48:31 IST" duration-ms="2438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method signature="testDeleteUser()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:33:02 IST" name="testDeleteUser" finished-at="2026-05-25T19:33:03 IST" duration-ms="736" status="PASS">
+        <test-method signature="testDeleteUser()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:31 IST" name="testDeleteUser" finished-at="2026-05-25T19:48:31 IST" duration-ms="346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteUser -->
-        <test-method signature="testGetInvalidUser()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:33:03 IST" name="testGetInvalidUser" finished-at="2026-05-25T19:33:03 IST" duration-ms="704" status="PASS">
+        <test-method signature="testGetInvalidUser()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:31 IST" name="testGetInvalidUser" finished-at="2026-05-25T19:48:32 IST" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetInvalidUser -->
-        <test-method signature="testGetSingleUser()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:33:04 IST" name="testGetSingleUser" finished-at="2026-05-25T19:33:04 IST" duration-ms="747" status="PASS">
+        <test-method signature="testGetSingleUser()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:32 IST" name="testGetSingleUser" finished-at="2026-05-25T19:48:33 IST" duration-ms="625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetSingleUser -->
-        <test-method signature="testGetUsersList()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:33:04 IST" name="testGetUsersList" finished-at="2026-05-25T19:33:05 IST" duration-ms="667" status="PASS">
+        <test-method signature="testGetUsersList()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:33 IST" name="testGetUsersList" finished-at="2026-05-25T19:48:33 IST" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetUsersList -->
-        <test-method signature="testResponseTime()[pri:0, instance:testmu.tests.api.UserApiTest@74971ed9]" started-at="2026-05-25T19:33:05 IST" name="testResponseTime" finished-at="2026-05-25T19:33:06 IST" duration-ms="730" status="PASS">
+        <test-method signature="testResponseTime()[pri:0, instance:testmu.tests.api.UserApiTest@66ba7e45]" started-at="2026-05-25T19:48:33 IST" name="testResponseTime" finished-at="2026-05-25T19:48:34 IST" duration-ms="657" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseTime -->
       </class> <!-- testmu.tests.api.UserApiTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- API Tests -->
+    <test started-at="2026-05-25T19:48:34 IST" name="Integration Tests" finished-at="2026-05-25T19:48:38 IST" duration-ms="4492">
+      <class name="testmu.tests.integration.CreateAndVerifyUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testmu.tests.integration.CreateAndVerifyUserTest@15fdd1f2]" started-at="2026-05-25T19:48:34 IST" name="setUp" finished-at="2026-05-25T19:48:35 IST" duration-ms="1019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUpIntegration()[pri:0, instance:testmu.tests.integration.CreateAndVerifyUserTest@15fdd1f2]" started-at="2026-05-25T19:48:35 IST" name="setUpIntegration" finished-at="2026-05-25T19:48:36 IST" duration-ms="1193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpIntegration -->
+        <test-method signature="testCreateUserViaApiAndVerifyUILogin()[pri:0, instance:testmu.tests.integration.CreateAndVerifyUserTest@15fdd1f2]" started-at="2026-05-25T19:48:36 IST" name="testCreateUserViaApiAndVerifyUILogin" finished-at="2026-05-25T19:48:38 IST" duration-ms="1838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserViaApiAndVerifyUILogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testmu.tests.integration.CreateAndVerifyUserTest@15fdd1f2]" started-at="2026-05-25T19:48:38 IST" name="tearDown" finished-at="2026-05-25T19:48:38 IST" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testmu.tests.integration.CreateAndVerifyUserTest -->
+    </test> <!-- Integration Tests -->
+  </suite> <!-- TestMu SDET2 Suite -->
 </testng-results>
