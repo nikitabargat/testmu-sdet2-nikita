@@ -7,6 +7,7 @@
   <groupId>testmu</groupId>
   <artifactId>testmu-sdet2-nikita</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>testmu-sdet2-nikita</name>
   <!-- FIXME change it to the project's website -->
