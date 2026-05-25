@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestMu SDET2 Suite" verbose="1">
+
+    <test name="UI Tests">
+        <classes>
+            <class name="testmu.tests.ui.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="API Tests">
+        <classes>
+            <class name="testmu.tests.api.UserApiTest"/>
+        </classes>
+    </test>
+
+    <test name="Integration Tests">
+        <classes>
+            <class name="testmu.tests.integration.CreateAndVerifyUserTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,5 @@
+testmu\pages\InventoryPage.class
+testmu\pages\LoginPage.class
+testmu\utils\ConfigReader.class
+testmu\base\BaseTest.class
+testmu\tests\ui\LoginTest.class
